@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2020 Diego Elio Pettenò
+# SPDX-FileCopyrightText: 2021 Piotr "DoomHammer" Gaczkowski for Hackerspace Trójmiasto
+#
+# SPDX-License-Identifier: Unlicense
+
+repos:
+-   repo: https://github.com/fsfe/reuse-tool
+    rev: latest
+    hooks:
+    - id: reuse
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
